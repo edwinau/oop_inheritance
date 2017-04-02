@@ -1,9 +1,12 @@
 require_relative "multilinguist"
 
 class MathGenius < Multilinguist
+
+
   def report_total(numbers)
-      numbers.each do |num|
-        x += num
+    x = 0
+      numbers.each do |y|
+        x += y
       end
       self.say_in_local_language("The total is #{x}")
     end
